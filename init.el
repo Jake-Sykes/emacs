@@ -43,3 +43,4 @@
 (load (locate-user-emacs-file "modules/search.el"))
 (load (locate-user-emacs-file "modules/org.el"))
 (load (locate-user-emacs-file "modules/programming.el") :no-error-if-file-is-missing)
+(load (locate-user-emacs-file "modules/sway.el") :no-error-if-file-is-missing)
