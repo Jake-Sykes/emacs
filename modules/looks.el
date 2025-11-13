@@ -6,9 +6,9 @@
 ;;; Code:
 
 ;;; Font
-(set-face-attribute 'default nil :family "Iosevka" :height 120)
-(set-face-attribute 'variable-pitch nil :family "Iosevka" :height 1.0) ; Need to find a font I Like for this.
-(set-face-attribute 'fixed-pitch nil :family "Iosevka" :height 1.0)
+(set-face-attribute 'default nil :family "Iosevka Nerd Font" :height 130)
+(set-face-attribute 'variable-pitch nil :family "Iosevka Nerd Font" :height 1.0) ; Need to find a font I Like for this.
+(set-face-attribute 'fixed-pitch nil :family "Iosevka Nerd Font" :height 1.0)
 
 ;;; Theme
 (use-package doric-themes
@@ -16,11 +16,11 @@
   :demand t
   :config
   ;; These are the default values.
-  (setq doric-themes-to-toggle '(doric-light doric-dark))
+  (setq doric-themes-to-toggle '(doric-earth doric-fire))
   (setq doric-themes-to-rotate doric-themes-collection)
 
-  (doric-themes-select 'doric-light)
-
+  (doric-themes-select 'doric-earth)
+  
   ;; ;; To load a random theme instead, use something like one of these:
   ;;
   ;; (doric-themes-load-random)
@@ -56,6 +56,11 @@
 
   ;; Set a key binding if you need to toggle spacious padding.
   (define-key global-map (kbd "<f8>") #'spacious-padding-mode))
+
+;;; Icons
+
+(use-package all-the-icons
+  :ensure t)
 
 ;;; Modeline
 ;;
@@ -103,3 +108,4 @@
 	      '("%e"
 		jds-modeline-buffer-name
 		jds-modeline-major-mode))
+

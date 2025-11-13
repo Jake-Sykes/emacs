@@ -6,7 +6,7 @@
 ;;; Code:
 
 (setq default-tab-width 4
-      inhibit-startup-screen t)
+      inhibit-startup-screen nil)		; I wanna have a custom one at some point
 
 (push '(menu-bar-lines . 0)   default-frame-alist)
 (push '(tool-bar-lines . 0)   default-frame-alist)
